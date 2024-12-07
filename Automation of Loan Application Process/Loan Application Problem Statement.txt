@@ -1,0 +1,52 @@
+ Project Title: Automation of Loan Application Process
+
+Objective:  
+Develop a UiPath automation solution that reads data from an input Excel file, fills in the loan application form on the UI Bank website, retrieves the generated Loan ID, and writes it back to the respective record in the Excel file.
+
+URL:  
+[UI Bank Loan Application](https://uibank.uipath.com/loans/apply)
+
+Project Description:  
+The automation project aims to streamline the loan application process by automating the data entry and retrieval tasks involved. The process involves reading customer data from an input Excel file, entering the data into the loan application form on the UI Bank website, submitting the form, retrieving the generated Loan ID, and updating the Excel file with the Loan ID.
+
+Scope and Requirements:
+
+1. Input Excel File:
+   - The Excel file will contain multiple rows of customer data.
+   - Each row will have fields such as Name, Email, Date of Birth, Loan Amount, Loan Purpose, and other necessary details required for the loan application.
+
+2. Data Entry to Web Form:
+   - Navigate to the loan application page at [UI Bank Loan Application](https://uibank.uipath.com/loans/apply).
+   - For each customer record in the Excel file, fill in the corresponding fields on the web form.
+   - Submit the form to generate a Loan ID.
+
+3. Data Retrieval and Writing Back:
+   - After form submission, retrieve the generated Loan ID displayed on the confirmation page.
+   - Write the retrieved Loan ID back to the respective row in the input Excel file.
+
+4. Error Handling:
+   - Implement error handling to manage scenarios where the form submission fails or the Loan ID is not generated.
+   - Log errors and continue processing the next record in the Excel file.
+
+5. Logging and Reporting:
+   - Maintain a log of all processed records, including successfully processed records and any errors encountered.
+   - Generate a summary report at the end of the automation run, detailing the number of records processed, success rate, and any issues faced.
+
+6. Automation Components:
+   - Use UiPath activities such as Excel Application Scope, Read Range, Write Range, Type Into, Click, Get Text, and others as needed.
+   - Create reusable workflows for tasks such as reading data from Excel, filling the web form, retrieving Loan IDs, and writing back to Excel.
+
+7. Environment Setup:
+   - Ensure that the UiPath Studio environment is set up with the necessary packages and dependencies.
+   - Test the automation in a controlled environment before deploying it to production.
+
+Assumptions:
+- The input Excel file follows a consistent format with predefined column headers.
+- The UI Bank website is accessible and the web elements are stable and identifiable by UiPath.
+- The Loan ID is displayed in a predictable location on the confirmation page.
+
+Expected Outcome:
+- A fully automated process that reads customer data from an Excel file, submits loan applications on the UI Bank website, retrieves Loan IDs, and updates the Excel file with the retrieved Loan IDs.
+- Improved efficiency and accuracy in the loan application process by eliminating manual data entry and retrieval tasks.
+
+
